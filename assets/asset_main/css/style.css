@@ -27,6 +27,20 @@ h6 {
     padding: 0 !important;
 }
 
+.about-filter2 {
+    justify-content: center;
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 43px;
+}
+
+.about-filter3 {
+    justify-content: center;
+    display: flex;
+    padding-top: 5px;
+}
+
+
 .inline-block {
     display: inline-block;
 }

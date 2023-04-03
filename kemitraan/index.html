@@ -139,7 +139,7 @@
                                     <a class="nav-link" href="https://profound-eclair-2cd2f4.netlify.app">Beranda</a>
                                 </li>
 
-                                <li class="nav-item active">
+                                <li class="nav-item ">
                                     <a class="nav-link"
                                         href="https://profound-eclair-2cd2f4.netlify.app/berita">Berita</a>
                                 </li>
@@ -147,7 +147,7 @@
                                     <a class="nav-link"
                                         href="https://profound-eclair-2cd2f4.netlify.app/galeri">Galeri</a>
                                 </li>
-                                <li class="nav-item ">
+                                <li class="nav-item active">
                                     <a class="nav-link"
                                         href="https://profound-eclair-2cd2f4.netlify.app/kemitraan">Kemitraan</a>
                                 </li>
@@ -178,18 +178,89 @@
             </div>
         </div>
     </section>
-
-
     <form onsubmit="Mail(); reset(); return flase;">
-        <label for="nama">Nama:</label><br>
-        <input type="text" id="nama" name="nama"><br>
-        <label for="instansi">Nama Instansi:</label><br>
-        <input type="text" id="instansi" name="instansi"><br>
-        <label for="nohp">No HP/WA:</label><br>
-        <input type="text" id="nohp" name="nohp"><br>
-        <label for="pesan">Isi Pesan:</label><br>
-        <textarea id="pesan" name="pesan"></textarea><br>
-        <input type="submit" value="Kirim">
+
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+            name='viewport' />
+        <div class="overlay"></div>
+
+        <style type="text/css">
+            body {
+                background-color: #efebe9;
+                font-family: sans-serif
+            }
+
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19)
+            }
+        </style>
+        <div class="container-fluid" style="height: 200px;background-color: #212529;">
+        </div>
+        <div class="container col-md-7">
+            <div class="row" style="margin-top: -100px;">
+                <div class="card w-100" style="border-radius: 0px;background-color: #212529;">
+                    <div class="card-body text-center" style="background-color: #fff;">
+
+                        <div class="row">
+                            <div class="card w-100" style="border-radius: 0px;background-color: #212529;">
+                                <div class="card-body text-center">
+                                    <div class="text-left text-light">
+                                        <h2 style="font-family: Montserrat;"><b
+                                                style="background: -webkit-linear-gradient(#00d2ff,#3a7bd5);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">Form</b>
+                                            Kemitraan</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="card w-100" style="border-top-left-radius: 0px;border-top-right-radius: 0px;">
+                                <div class="card-body">
+                                    <div class="card-title" style="text-align: left;"> Kami sangat terbuka untuk
+                                        berkolaborasi dengan sekolah atau
+                                        institusi Bapak/Ibu. Silahkan isi data berikut ini agar kami mendapatkan
+                                        informasi awal. Kami akan segera menghubungi Anda. </div>
+                                    <hr>
+                                    <div class="input-group mb-3">
+                                        <div class="form-floating w-100">
+                                            <input type="text" class="form-control" id="nama" placeholder="Nama Anda"
+                                                name="nama">
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                        <div class="form-floating w-100">
+                                            <input type="text" class="form-control input-sm" id="instansi"
+                                                placeholder="Nama Instansi" name="instansi">
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="form-floating w-100">
+                                            <input type="text" class="form-control input-sm" id="nohp"
+                                                placeholder="No HP/WA" name="nohp">
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="form-floating w-100">
+                                            <input type="text" class="form-control input-sm" id="pesan"
+                                                placeholder="Isi Pesan" name="pesan">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="card w-100">
+                                <div class="card-body">
+                                    <div class="d-grid gap-2">
+                                        <input type="submit" class="btn btn-primary" value="Kirim">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </form>
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
@@ -207,13 +278,16 @@
                 Password: "FE4D35228BD8535582362D9AE4A109FE2BDC",
                 To: 'goyigoylucu@gmail.com',
                 From: "notonesia@gmail.com",
-                Subject: "This is the subject",
-                Body: "And this is the body"
+                Subject: "Kemitraan Noto Indonesia",
+                Body: "Nama: " + nama + "<br/> Nama Instansi: " + instansi + "<br/> Nomor HP/WA: " + nohp + "<br/> Pesan: " + pesan
             }).then(
                 message => alert(message)
             );
         }
     </script>
+
+
+
 
 
     <footer id="footer" class="bg-one">
@@ -222,8 +296,10 @@
                 <div class="row">
                     <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
                         <h3>Tentang Kami</h3>
-                        <p>LPK Noto Indonesia merupakan Lembaga Pelatihan Kerja untuk Bahasa Jepang dan Skill Kompetensi
-                            Industri yang siap membantu dan sangat terbuka bagi siapa saja yang ingin menggapai mimpi,
+                        <p>LPK Noto Indonesia merupakan Lembaga Pelatihan Kerja untuk Bahasa Jepang dan Skill
+                            Kompetensi
+                            Industri yang siap membantu dan sangat terbuka bagi siapa saja yang ingin menggapai
+                            mimpi,
                             dan cita-cita untuk bekerja maupun magang di Jepang.</p>
                     </div>
                     <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">

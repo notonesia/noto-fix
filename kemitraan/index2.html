@@ -139,7 +139,7 @@
                                     <a class="nav-link" href="https://profound-eclair-2cd2f4.netlify.app">Beranda</a>
                                 </li>
 
-                                <li class="nav-item active">
+                                <li class="nav-item ">
                                     <a class="nav-link"
                                         href="https://profound-eclair-2cd2f4.netlify.app/berita">Berita</a>
                                 </li>
@@ -147,7 +147,7 @@
                                     <a class="nav-link"
                                         href="https://profound-eclair-2cd2f4.netlify.app/galeri">Galeri</a>
                                 </li>
-                                <li class="nav-item ">
+                                <li class="nav-item active">
                                     <a class="nav-link"
                                         href="https://profound-eclair-2cd2f4.netlify.app/kemitraan">Kemitraan</a>
                                 </li>
@@ -197,35 +197,6 @@
             .card {
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19)
             }
-
-            .select2-selection__rendered {
-                line-height: 57px !important
-            }
-
-            .select2-container .select2-selection--single {
-                height: 58px !important
-            }
-
-            .select2-selection__arrow {
-                height: 58px !important
-            }
-
-            .image-upload>input {
-                display: none
-            }
-
-            #displayPict {
-                max-width: 200px;
-                max-height: 280px;
-                object-fit: cover;
-                border-radius: 20px;
-                cursor: pointer;
-                transition: transform .2s
-            }
-
-            #displayPict:hover {
-                transform: scale(1.1)
-            }
         </style>
         <div class="container-fluid" style="height: 200px;background-color: #212529;">
         </div>
@@ -240,7 +211,7 @@
                                     <div class="text-left text-light">
                                         <h2 style="font-family: Montserrat;"><b
                                                 style="background: -webkit-linear-gradient(#00d2ff,#3a7bd5);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">Form</b>
-                                            Pendaftaran Online</h2>
+                                            Kemitraan</h2>
                                     </div>
                                 </div>
                             </div>
@@ -248,13 +219,15 @@
                         <div class="row mt-3">
                             <div class="card w-100" style="border-top-left-radius: 0px;border-top-right-radius: 0px;">
                                 <div class="card-body">
-                                    <div class="card-title"> Umum </div>
+                                    <div class="card-title" style="text-align: left;"> Kami sangat terbuka untuk
+                                        berkolaborasi dengan sekolah atau
+                                        institusi Bapak/Ibu. Silahkan isi data berikut ini agar kami mendapatkan
+                                        informasi awal. Kami akan segera menghubungi Anda. </div>
                                     <hr>
                                     <div class="input-group mb-3">
                                         <div class="form-floating w-100">
                                             <input type="text" class="form-control" id="name" placeholder="Name"
                                                 name="nama" required>
-                                            <label class="text-secondary" for="name">Nama</label>
                                         </div>
                                     </div>
 
@@ -262,14 +235,12 @@
                                         <div class="form-floating w-100">
                                             <input type="text" class="form-control input-sm" id="birth_place"
                                                 placeholder="Tempat Lahir" name="tempat_lahir" required>
-                                            <label class="text-secondary" for="birth_place">Tempat Lahir</label>
                                         </div>
                                     </div>
                                     <div class="input-group mb-3">
                                         <div class="form-floating w-100">
                                             <input type="text" class="form-control input-sm" id="no_ktp"
                                                 placeholder="No.KTP" name="no_ktp" required>
-                                            <label class="text-secondary" for="no_ktp">No.KTP</label>
                                         </div>
                                     </div>
                                 </div>

@@ -223,20 +223,20 @@
                                     <div class="input-group mb-3">
                                         <div class="form-floating w-100">
                                             <input type="text" class="form-control" id="nama" placeholder="Nama Anda"
-                                                name="nama">
+                                                name="nama" required>
                                         </div>
                                     </div>
 
                                     <div class="input-group mb-3">
                                         <div class="form-floating w-100">
                                             <input type="text" class="form-control input-sm" id="instansi"
-                                                placeholder="Nama Instansi" name="instansi">
+                                                placeholder="Nama Instansi" name="instansi" required>
                                         </div>
                                     </div>
                                     <div class="input-group mb-3">
                                         <div class="form-floating w-100">
                                             <input type="text" class="form-control input-sm" id="nohp"
-                                                placeholder="No HP/WA" name="nohp">
+                                                placeholder="No HP/WA" name="nohp" required>
                                         </div>
                                     </div>
                                     <div class="input-group mb-3">
@@ -278,8 +278,8 @@
                 Password: "FE4D35228BD8535582362D9AE4A109FE2BDC",
                 To: 'goyigoylucu@gmail.com',
                 From: "notonesia@gmail.com",
-                Subject: "This is the subject",
-                Body: "And this is the body"
+                Subject: "Kemitraan Noto Indonesia",
+                Body: "Nama:" + nama + "<br/> Nama Instansi:" + instansi + "<br/> Nomor HP/WA:" + nohp + "<br/> Pesan:" + pesan
             }).then(
                 message => alert(message)
             );

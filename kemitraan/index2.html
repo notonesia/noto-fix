@@ -178,114 +178,113 @@
             </div>
         </div>
     </section>
+    <form onsubmit="Mail(); reset(); return flase;">
 
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+            name='viewport' />
+        <div class="overlay"></div>
 
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
-        name='viewport' />
-    <div class="overlay"></div>
-    <div class="spanner">
-        <div class="lds-dual-ring"></div>
-        <p class="text-white">Loading Data</p>
-    </div>
+        <style type="text/css">
+            body {
+                background-color: #efebe9;
+                font-family: sans-serif
+            }
 
-    <style type="text/css">
-        body {
-            background-color: #efebe9;
-            font-family: sans-serif
-        }
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19)
+            }
+        </style>
+        <div class="container-fluid" style="height: 200px;background-color: #212529;">
+        </div>
+        <div class="container col-md-7">
+            <div class="row" style="margin-top: -100px;">
+                <div class="card w-100" style="border-radius: 0px;background-color: #212529;">
+                    <div class="card-body text-center" style="background-color: #fff;">
 
-        .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19)
-        }
-    </style>
-    <div class="container-fluid" style="height: 200px;background-color: #212529;">
-    </div>
-    <div class="container col-md-7">
-        <div class="row" style="margin-top: -100px;">
-            <div class="card w-100" style="border-radius: 0px;background-color: #212529;">
-                <div class="card-body text-center" style="background-color: #fff;">
-
-                    <div class="row">
-                        <div class="card w-100" style="border-radius: 0px;background-color: #212529;">
-                            <div class="card-body text-center">
-                                <div class="text-left text-light">
-                                    <h2 style="font-family: Montserrat;"><b
-                                            style="background: -webkit-linear-gradient(#00d2ff,#3a7bd5);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">Form</b>
-                                        Kemitraan</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="card w-100" style="border-top-left-radius: 0px;border-top-right-radius: 0px;">
-                            <div class="card-body">
-                                <div class="card-title" style="text-align: left;"> Kami sangat terbuka untuk
-                                    berkolaborasi dengan sekolah atau
-                                    institusi Bapak/Ibu. Silahkan isi data berikut ini agar kami mendapatkan
-                                    informasi awal. Kami akan segera menghubungi Anda. </div>
-                                <hr>
-                                <form onsubmit="Mail(); reset(); return flase;"></form>
-                                <div class="input-group mb-3">
-                                    <div class="form-floating w-100">
-                                        <input type="text" class="form-control" id="name" placeholder="Name" name="nama"
-                                            required>
-                                    </div>
-                                </div>
-
-                                <div class="input-group mb-3">
-                                    <div class="form-floating w-100">
-                                        <input type="text" class="form-control input-sm" id="birth_place"
-                                            placeholder="Tempat Lahir" name="tempat_lahir" required>
-                                    </div>
-                                </div>
-                                <div class="input-group mb-3">
-                                    <div class="form-floating w-100">
-                                        <input type="text" class="form-control input-sm" id="no_ktp"
-                                            placeholder="No.KTP" name="no_ktp" required>
+                        <div class="row">
+                            <div class="card w-100" style="border-radius: 0px;background-color: #212529;">
+                                <div class="card-body text-center">
+                                    <div class="text-left text-light">
+                                        <h2 style="font-family: Montserrat;"><b
+                                                style="background: -webkit-linear-gradient(#00d2ff,#3a7bd5);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">Form</b>
+                                            Kemitraan</h2>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="card w-100">
-                            <div class="card-body">
-                                <div class="d-grid gap-2">
-                                    <input type="submit" class="btn btn-primary" value="Kirim">
+                        <div class="row mt-3">
+                            <div class="card w-100" style="border-top-left-radius: 0px;border-top-right-radius: 0px;">
+                                <div class="card-body">
+                                    <div class="card-title" style="text-align: left;"> Kami sangat terbuka untuk
+                                        berkolaborasi dengan sekolah atau
+                                        institusi Bapak/Ibu. Silahkan isi data berikut ini agar kami mendapatkan
+                                        informasi awal. Kami akan segera menghubungi Anda. </div>
+                                    <hr>
+                                    <div class="input-group mb-3">
+                                        <div class="form-floating w-100">
+                                            <input type="text" class="form-control" id="nama" placeholder="Nama Anda"
+                                                name="nama">
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                        <div class="form-floating w-100">
+                                            <input type="text" class="form-control input-sm" id="instansi"
+                                                placeholder="Nama Instansi" name="instansi">
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="form-floating w-100">
+                                            <input type="text" class="form-control input-sm" id="nohp"
+                                                placeholder="No HP/WA" name="nohp">
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="form-floating w-100">
+                                            <input type="text" class="form-control input-sm" id="pesan"
+                                                placeholder="Isi Pesan" name="pesan">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="card w-100">
+                                <div class="card-body">
+                                    <div class="d-grid gap-2">
+                                        <input type="submit" class="btn btn-primary" value="Kirim">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    </form>
-                    <script src="https://smtpjs.com/v3/smtp.js">
-                    </script>
-                    <script>
-                        function Mail() {
-
-                            let nama = document.getElementById("nama").value;
-                            let instansi = document.getElementById("instansi").value;
-                            let nohp = document.getElementById("nohp").value;
-                            let pesan = document.getElementById("pesan").value;
-
-                            Email.send({
-                                Host: "smtp.elasticemail.com",
-                                Username: "notonesia@gmail.com",
-                                Password: "FE4D35228BD8535582362D9AE4A109FE2BDC",
-                                To: 'goyigoylucu@gmail.com',
-                                From: "notonesia@gmail.com",
-                                Subject: "This is the subject",
-                                Body: "And this is the body"
-                            }).then(
-                                message => alert(message)
-                            );
-                        }
-                    </script>
                 </div>
             </div>
         </div>
-    </div>
+    </form>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        function Mail() {
 
+            let nama = document.getElementById("nama").value;
+            let instansi = document.getElementById("instansi").value;
+            let nohp = document.getElementById("nohp").value;
+            let pesan = document.getElementById("pesan").value;
 
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "notonesia@gmail.com",
+                Password: "FE4D35228BD8535582362D9AE4A109FE2BDC",
+                To: 'goyigoylucu@gmail.com',
+                From: "notonesia@gmail.com",
+                Subject: "This is the subject",
+                Body: "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
 
 
 

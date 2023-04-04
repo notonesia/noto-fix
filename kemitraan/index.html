@@ -273,11 +273,9 @@
             let pesan = document.getElementById("pesan").value;
 
             Email.send({
-                Host: "smtp.elasticemail.com",
-                Username: "notonesia@gmail.com",
-                Password: "FE4D35228BD8535582362D9AE4A109FE2BDC",
+                SecureToken: "8aff43e0-099f-4d4a-a2ab-cbaa803d557c"
                 To: 'goyigoylucu@gmail.com',
-                From: "notonesia@gmail.com",
+                From: "Kemitraan Noto",
                 Subject: "Kemitraan Noto Indonesia",
                 Body: "Nama: " + nama + "<br/> Nama Instansi: " + instansi + "<br/> Nomor HP/WA: " + nohp + "<br/> Pesan: " + pesan
             }).then(

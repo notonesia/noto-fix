@@ -280,8 +280,7 @@
             <div class="tp-bannertimer  tp-bottom" style="height: 6px; background-color: rgba(0, 0, 0, 0.25);"></div>
         </div>
     </div>
-    <div id="ads_field" class="container p-0">
-        <img src="https://www.lpknoto.id/assets/asset_main/images/ads/ads1.jpg" style="max-width:100%">
+    <div id="ads_field" class="container p-0 ads_field">
     </div>
     <script
         type="text/javascript">$(document).ready(function () { loadAds(); function loadAds() { $.ajax({ url: '', type: 'get', datatype: 'json', success: function (response) { var resT = $.parseJSON(response); $('#ads_field').empty(); $('#ads_field').append("<img class='rounded' src='data:image/jpeg;base64," + resT.ads64 + "' style='max-width:100%;border:1px solid #ccc''>"); }, error: function (XMLHttpRequest, textStatus, errorThrown) { console.log('error' + textStatus); } }); } $('#news-slider').owlCarousel({ autoplay: 6000, loop: true, items: 1, margin: 30, responsive: { 480: { items: 2 }, 768: { items: 2 }, 1024: { items: 3 } } }); $('#team-slider').owlCarousel({ autoplay: 5000, loop: true, items: 1, margin: 30, responsive: { 480: { items: 2 }, 768: { items: 3 }, 1024: { items: 4 } } }); });</script>

@@ -557,6 +557,10 @@ a:hover {
   padding: 0;
 }
 
+.ads_field {
+  max-width: 100%;
+}
+
 .navigation .dropdown:hover .dropdown-menu {
   visibility: visible;
   opacity: 1;
